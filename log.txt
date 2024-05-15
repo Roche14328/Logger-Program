@@ -1,0 +1,8 @@
+2024-04-30 20:49:44,603 - INFO - This is an info message
+2024-04-30 20:49:44,603 - WARNING - This is a warning message
+2024-04-30 20:49:44,603 - ERROR - This is an error message
+2024-04-30 20:49:44,604 - CRITICAL - This is a fatal message
+2024-05-03 21:18:18,025 - INFO - This is an info message
+2024-05-03 21:18:18,025 - WARNING - This is a warning message
+2024-05-03 21:18:18,026 - ERROR - This is an error message
+2024-05-03 21:18:18,026 - CRITICAL - This is a fatal message
