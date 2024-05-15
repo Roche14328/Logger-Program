@@ -12,7 +12,7 @@ To build the application, I created a Logger class using the Singleton pattern t
 4. Customize logging messages and levels as needed for your application.
 
 ## GitHub Repository
-Link to GitHub Repository: [Logger Program Repo](https://github.com/yourusername/logger-program)
+Link to GitHub Repository: [Logger Program Repo](https://github.com/Roche14328/Logger-Program)
 
 ## Key Code Explanations
 ```python
