@@ -54,6 +54,22 @@ if __name__ == '__main__':
     logger.log('ERROR', 'This is an error message')
     logger.log('FATAL', 'This is a fatal message')
 ```
+This code defines a Logger class that provides logging functionality using the `logging` module in Python. Let's go through the code step by step:
+
+1. The code begins by importing the `logging` module, which is a built-in module in Python used for logging purposes.
+
+2. The Logger class is defined. It follows the Singleton design pattern, which ensures that only one instance of the Logger class can exist. This is achieved by using a class variable `_instance` to store the singleton instance.
+
+3. The `get_instance` method is a class method that returns the singleton instance of the Logger class. If the `_instance` variable is `None`, indicating that no instance has been created yet, a new instance is created using `cls()` (which calls the class constructor) and assigned to the `_instance` variable. If an instance already exists, the existing instance is returned.
+
+4. The constructor `__init__` method initializes the logger. It creates an instance of `logging.getLogger('my_logger')`, which returns a logger object named `'my_logger'`. The logger's level is set to `logging.DEBUG`, which means it will log all messages at or above the DEBUG level. A formatter is created to specify the format of log messages, including the timestamp, log level, and message. A `FileHandler` is created to handle logging to a file named `'log.txt'`, and the formatter is set on the file handler. Finally, the file handler is added to the logger.
+
+5. The `log` method is used to log messages at different log levels. It takes two arguments: `level` and `message`. The `level` argument specifies the log level, which can be one of `'INFO'`, `'WARNING'`, `'ERROR'`, `'FATAL'`, or any other value representing the DEBUG level. The `message` argument contains the actual log message. Depending on the `level` argument, the method calls the appropriate logging method on the logger object (`info`, `warning`, `error`, `critical`, or `debug`) to log the message.
+
+6. The `__name__ == '__main__'` condition checks if the script is being run directly (as opposed to being imported as a module). If it is the main script, the following code is executed:
+
+   - An instance of the Logger class is obtained using the `get_instance` class method and assigned to the variable `logger`.
+   - The `log` method is called multiple times with different log levels and messages to showcase the logging functionality.
 
 
 
